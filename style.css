@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    /* font-weight: 200; */
+}
+
+/* ------------------ Header ------------------*/
+.header {
+    background: url(https://images.unsplash.com/photo-1708914310493-608163ef2a0b?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;
+    text-align: center;
+    padding: 53px 0;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: transparent;
+}
+
+.header-title {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: rgb(247, 247, 48);
+}
+
+.header-tagline {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(247, 240, 240, 0.8);
+}
+
+
+/*------------------ Navigation Bar------------------ */
+.navbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    /* background-color: rgb(38, 126, 240); */
+}
+
+.navdiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: grey; */
+
+}
+
+.navdiv .logo a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 227, 227, 0.627);
+    border-radius: 10px;
+    padding: 7px 15px;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: 900;
+}
+
+.navdiv ul{
+    display: flex;
+}
+
+.navdiv ul li{
+    margin: 0 15px;
+    list-style: none;
+}
+
+.navdiv ul li a{
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background-color .2s;
+}
+
+.navdiv ul li a:hover{
+    background-color: rgba(255, 227, 227, 0.627);
+    
+}
+
+
+/*------------------ Blog post section------------------ */
+.post-section-container{
+    margin-top: 1px;
+    background-color: rgb(226, 213, 247);
+    height: 100%;
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(45deg, rgb(34, 41, 247), rgb(255, 36, 222));
+}
+
+.post{
+    margin: 10px;
+    width: 400px;
+    height: 500px;
+    /* background-color: rgb(250, 9, 170); */
+    background-image: linear-gradient(45deg, rgb(34, 41, 247), rgb(255, 36, 222));
+    padding: 30px;
+    border-radius: 35px;
+    border-top-left-radius: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 0 0 15px 5px rgb(28, 28, 28);
+    transition: background-image .5s;
+}
+
+.post h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.post .mini-heading{
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.post-img{
+    width: 99%;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 35px;
+    border-top-left-radius: 0px;
+    filter: brightness(0.7);
+    transition: brightness() .5s;
+}
+
+.post .main-part{
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.post .post-btn{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 35px;
+    border-top-left-radius: 0px;
+    border: none;
+    font-weight: 450;
+    cursor: pointer;
+    border: 1px solid black;
+    transition:color background-color .3s  ;
+}
+.post .post-btn:hover{
+    color: white;
+    background-color: rgb(255, 85, 105);
+}
+.post:hover{
+    background-image: linear-gradient(45deg, rgb(244, 25, 178), rgb(63, 39, 247));
+}
+
+.post:hover .post-img {
+    filter: brightness(1); 
+}
+
+
+/*------------------ About me Section ------------------*/
+
+.abt-container{
+    margin-top: .5px;
+    padding:30px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg,  #3029F6, #9326EA);
+}
+
+.abt{
+    background-color: white;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 35px;
+    border-top-left-radius: 0px;
+    box-shadow: 0 0 20px 5px rgb(28, 28, 28);
+}
+
+.abt h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.abt p{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.abt p>strong:nth-child(3){
+    color: blue;
+}
+
+
+/*------------------ Contact section ------------------*/
+.contact-form{
+    margin-top: .5px;
+    padding: 40px 30px;
+    background-image: linear-gradient(45deg,  #3029F6, #9326EA);
+}
+.contact-form h2{
+    margin-left: 22px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+.cnt-container{
+    background-color: white;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 35px;
+    border-top-left-radius: 0px;
+    box-shadow: 0 0 20px 5px rgb(28, 28, 28);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(43, 43, 241);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(25, 0, 255);
+}
+
+/*------------------ Social Buttons ------------------*/
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.social-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgb(29, 29, 29); 
+    color: white; 
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    transform: scale(1.1); 
+}
+
+
+/*------------------ Footer ------------------*/
+.footer {
+    margin-top: .5px;
+    background-color: rgb(97, 97, 97); 
+    color:white; 
+    text-align: center;
+    padding: 15px; 
+    font-size: 17px; 
+}
+
+.footer p {
+    margin: 5px 0; 
+}
+
+
+
+/*------------------v  Media Queries  v------------------*/
+/*------------------v  Media Queries  v------------------*/
+
+@media (max-width:600px){
+    /*------------------ Header Part ------------------*/
+    
+    .header{
+        width: 100%;
+        height: 230px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        /* background-color: grey; */
+    }
+    .header-title {
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        margin: 30px 0px 0px 0px;
+        color: white;
+    }
+
+    .header-tagline {
+        margin-top: 3px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        font-style: italic;
+        color: rgba(247, 240, 240, 0.8);
+    }
+
+    /*------------------ Navigation Bar------------------ */
+    .navbar{
+        padding: 8px;
+        background-color: rgb(43, 130, 243);
+    }
+    .navdiv{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .navdiv .logo{
+        display: none;
+    }
+
+    .navdiv ul li{
+       padding: 0 9px;
+       /* background-color: grey; */
+    }
+    .navdiv ul li{
+        margin: 0;
+    }
+    .navdiv ul li a{
+        /* background-color: red; */
+        padding: 5px 8px;
+        font-size: 10px;
+        font-weight: 500;
+   }
+
+   /*------------------ Blog post section------------------ */
+   .post-section-container{
+        padding: 10px;
+        justify-content: center;
+   }
+   .post{
+        border-radius: 25px;
+        border-top-left-radius: 0px;
+        width: 150px;
+        height: 200px;
+        padding: 8px;
+   }
+   .post h2{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    .post .mini-heading{
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+
+    .post-img{
+        width: 99%;
+        height: 80px;
+        margin-bottom: 3px;
+        border-radius: 25px;
+        border-top-left-radius: 0px;
+    }
+    .post .main-part{
+        display: none;
+    }
+
+    .post .post-btn{
+        padding: 3px 5px;
+        margin-top: 4px;
+        font-size: 11px;
+    }
+
+    /*------------------ About me Section ------------------*/
+   
+    .abt-container{
+        margin-top: 1px;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .abt{
+        padding: 10px;
+        border-radius: 25px;
+        border-top-left-radius: 0px;
+    }
+    
+    .abt h1{
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: lowercase;
+    }
+    
+    .abt p{
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+  
+   /*------------------ Contact Section ------------------*/
+   .contact-form{
+        margin-top: .5px;
+        padding: 20px;
+    }
+    .contact-form h2{
+        margin-left: 14px;
+        margin-bottom: 6px;
+        font-size: 18px;
+    }
+    .cnt-container{
+        padding: 15px;
+        border-radius: 25px;
+        border-top-left-radius: 0px;  
+    }
+    
+    label {
+        margin-bottom: 1px;
+        font-size: 11px;
+        color: black;
+        font-weight: bold;
+    }
+    input, textarea {
+        padding: 6px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    
+    button {
+        color: white;
+        font-size: 13px;
+    }
+
+    /*------------------ Social Buttons ------------------*/
+    .social-icons {
+        margin-top: 14px;
+        gap: 10px; 
+    }
+    
+    .social-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    /*------------------ Footer ------------------*/
+
+    .footer {
+        font-size: 10px;
+        padding: 10px;
+        line-height: 1.5;
+    }
+
+    .footer p {
+        margin: 5px 0;
+    }
+    
+        
+    
+                
+}
